@@ -5,7 +5,7 @@
 #include "lotux-pinctrl.dtsi"
 #include "lotux-layouts.dtsi"
 
- / {
+/ {
     model = "xplotusv0.2";
     compatible = "lotux";
 
@@ -20,7 +20,7 @@
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN_MATRIX";
 
-        /* 4 rows: 2 original matrix + 2 hanging keys */
+        /* 4 rows: 2 original + 2 hanging keys */
         row-gpios = <
             &gpio0 6 GPIO_ACTIVE_LOW   /* matrix top row */
             &gpio0 2 GPIO_ACTIVE_LOW   /* matrix bottom row */

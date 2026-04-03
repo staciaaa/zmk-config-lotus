@@ -4,27 +4,19 @@
 
         default_layer {
             bindings = <
-                /* Row 0: top row of matrix */
-                &kp B      &kp E      &kp V      &none      &none
-                /* Row 1: bottom row of matrix */
-                &kp Z      &kp SPACE  &kp LALT    &none      &none
-                /* Row 2: first hanging key */
-                &mt LCTRL SPACE &none  &none      &none      &none
-                /* Row 3: second hanging key */
-                &lt 1 LSHIFT    &none  &kp ENTER  &none      &none
+                /* row 0: top of matrix */ &kp B      &kp E      &kp V      &none      &none
+                /* row 1: bottom of matrix */ &kp Z      &kp SPACE  &kp LALT    &none      &none
+                /* row 2: first hanging key */ &mt LCTRL SPACE &none  &none      &none      &none
+                /* row 3: second hanging key */ &lt 1 LSHIFT &none  &kp ENTER  &none      &none
             >;
         };
 
         fn_layer {
             bindings = <
-                /* Row 0: top row of matrix */
-                &kp LBKT   &kp RBKT   &kp X       &none      &none
-                /* Row 1: bottom row of matrix */
-                &kp Z      &kp Y      &kp TAB     &none      &none
-                /* Row 2: first hanging key */
-                &kp LSHIFT &none      &none      &none      &none
-                /* Row 3: second hanging key */
-                &kp ENTER  &none      &none      &none      &none
+                /* row 0: top of matrix */ &kp LBKT   &kp RBKT   &kp X       &none      &none
+                /* row 1: bottom of matrix */ &kp Z      &kp Y      &kp TAB     &none      &none
+                /* row 2: first hanging key */ &kp LSHIFT &none      &none      &none      &none
+                /* row 3: second hanging key */ &kp ENTER  &none      &none      &none      &none
             >;
         };
     };
