@@ -4,25 +4,27 @@
 
         default_layer {
             bindings = <
-                &kp B      &kp E      &kp V
-                &kp Z      &kp SPACE  &kp LALT
-
-                &mt LCTRL SPACE
-                &lt 1 LSHIFT
+                /* Row 0: top row of matrix */
+                &kp B      &kp E      &kp V      &none      &none
+                /* Row 1: bottom row of matrix */
+                &kp Z      &kp SPACE  &kp LALT    &none      &none
+                /* Row 2: first hanging key */
+                &mt LCTRL SPACE &none  &none      &none      &none
+                /* Row 3: second hanging key */
+                &lt 1 LSHIFT    &none  &kp ENTER  &none      &none
             >;
         };
 
         fn_layer {
             bindings = <
-                // Brush controls
-                &kp LBKT   &kp RBKT   &kp X
-
-                // Undo / redo / UI
-                &kp Z      &kp Y      &kp TAB
-
-                // Direct keys
-                &kp LSHIFT
-                &kp ENTER
+                /* Row 0: top row of matrix */
+                &kp LBKT   &kp RBKT   &kp X       &none      &none
+                /* Row 1: bottom row of matrix */
+                &kp Z      &kp Y      &kp TAB     &none      &none
+                /* Row 2: first hanging key */
+                &kp LSHIFT &none      &none      &none      &none
+                /* Row 3: second hanging key */
+                &kp ENTER  &none      &none      &none      &none
             >;
         };
     };
