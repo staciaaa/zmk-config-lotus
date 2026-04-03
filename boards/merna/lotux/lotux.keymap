@@ -1,0 +1,29 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp B      &kp E      &kp V
+                &kp Z      &kp SPACE  &kp LALT
+
+                &mt LCTRL SPACE
+                &lt 1 LSHIFT
+            >;
+        };
+
+        fn_layer {
+            bindings = <
+                // Brush controls
+                &kp LBKT   &kp RBKT   &kp X
+
+                // Undo / redo / UI
+                &kp Z      &kp Y      &kp TAB
+
+                // Direct keys
+                &kp LSHIFT
+                &kp ENTER
+            >;
+        };
+    };
+};
