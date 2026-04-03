@@ -19,5 +19,5 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nrfmicro_nrf52840_zmk
     shield: lotux
