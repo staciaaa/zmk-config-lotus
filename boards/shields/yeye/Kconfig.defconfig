@@ -1,0 +1,6 @@
+if SHIELD_YEYE
+
+config ZMK_KEYBOARD_NAME
+    default "yeye"
+
+endif # SHIELD_YEYE

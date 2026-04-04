@@ -3,10 +3,9 @@
 # for instructions.
 
 file_format: "1"
-id: lotux
-name: xplotusv0.1
-type: board
-arch: arm
+id: yeye
+name: yeye
+type: shield
 
 # Set this to a URL that documents the keyboard.
 url: https://example.com
@@ -17,11 +16,5 @@ features:
   - keys
   - studio  # Remove this line if your keyboard will not support ZMK Studio
 
-outputs:
-  - usb
-  - ble
-# If your board has multiple revisions in its board.yml, create a matching list here:
-# revisions:
-#   - 2.0.0
-#   - 1.0.0
-# default_revision: 2.0.0
+requires:
+  - pro_micro
