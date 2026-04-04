@@ -1,23 +1,23 @@
-    / {
-        keymap {
-            compatible = "zmk,keymap";
+/ {
+    keymap {
+        compatible = "zmk,keymap";
 
-            default_layer {
-                bindings = <
-                    /* Row 0: Matrix Top */    &kp B             &kp E      &kp V
-                    /* Row 1: Matrix Bottom */ &kp Z             &kp SPACE  &kp LALT
-                    /* Row 2: Hanging 1 */     &mt LCTRL SPACE
-                    /* Row 3: Hanging 2 */     &lt 1 LSHIFT
-                >;
-            };
+        default_layer {
+            bindings = <
+                &kp B      &kp E      &kp V
+                &kp Z      &kp SPACE  &kp LALT
+                &mt LCTRL SPACE
+                &lt 1 LSHIFT
+            >;
+        };
 
-            fn_layer {
-                bindings = <
-                    /* Row 0: Matrix Top */    &kp LBKT          &kp RBKT   &kp X
-                    /* Row 1: Matrix Bottom */ &kp Z             &kp Y      &kp TAB
-                    /* Row 2: Hanging 1 */     &kp LSHIFT
-                    /* Row 3: Hanging 2 */     &kp ENTER
-                >;
-            };
+        fn_layer {
+            bindings = <
+                &kp LBKT   &kp RBKT   &kp X
+                &kp Z      &kp Y      &kp TAB
+                &kp LSHIFT
+                &kp ENTER
+            >;
         };
     };
+};
