@@ -4,8 +4,13 @@
 
         default_layer {
             bindings = <
+                // Matrix (row 0)
                 &kp B      &kp E      &kp V
+
+                // Matrix (row 1)
                 &kp Z      &kp SPACE  &kp LALT
+
+                // Direct keys
                 &mt LCTRL SPACE
                 &lt 1 LSHIFT
             >;
